@@ -32,6 +32,7 @@
     <div class="row">
       <div class="col-3"></div>
       <div class="col-6">
+
         <div class="card">
           <div class="card-header">
             <h4>Ingrese sus datos</h4>
@@ -49,10 +50,42 @@
               </div>
               <input type="submit" class="btn btn-primary" value="Agregar Alumno">
             </form>
-            
+
           </div>
         </div>
       </div>
+
+        <div class="card">
+          <div class="card-header"><h4>Alumnos Registrados</h4></div>
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Apellido Paterno</th>
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <?php
+                if($result->num_rows>0){
+                  while($row = $result->fetch_assoc()){
+                    $ID=$row['Id'];
+                    $Nombre=$row['Nombre'];
+                    $Apellido=$row['Apellido'];
+
+                    echo "<tr>
+                      <td>$ID</td>
+                      <td>$Nombre</td>
+                      <td>$Apellido</td>
+                    </tr>";
+                  }
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       <div class="col-3"></div>
     </div>
   </div>
