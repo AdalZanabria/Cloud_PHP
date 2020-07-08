@@ -46,7 +46,7 @@
                 <label for="apellido">Apellido Paterno:</label>
                 <input type="text" class="form-control" id="apellido" name="apellido"/>
               </div>
-              <button type="submit" class="btn btn-primary">Guardar</button>
+              <input type="submit" class="btn btn-info" value="Agregar Alumno">
             </form>
           </div>
         </div>
