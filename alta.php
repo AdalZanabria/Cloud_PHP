@@ -10,7 +10,7 @@
     $insertar = "INSERT INTO Usuario (Nombre, Apellido) VALUES ('$nombre','$apellido')";
     $query = mysqli_query($conn,$insertar);
 
-    echo "Alumno registrado."
+    echo "Alumno registrado.";
     header('location: index.php');
 
     }else{
