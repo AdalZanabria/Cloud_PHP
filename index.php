@@ -37,14 +37,14 @@
             <h4>Ingrese sus datos</h4>
           </div>
           <div class="card-body">
-            <form>
+            <form name="alta-alumnos" action="alta.php" method="post">
               <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" />
+                <input type="text" class="form-control" id="nombre" name="nombre"/>
               </div>
               <div class="form-group">
-                <label for="apellido">Apellido:</label>
-                <input type="text" class="form-control" id="apellido" />
+                <label for="apellido">Apellido Paterno:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido"/>
               </div>
               <button type="submit" class="btn btn-primary">Guardar</button>
             </form>
