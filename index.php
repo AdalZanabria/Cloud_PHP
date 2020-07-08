@@ -17,6 +17,9 @@
         if($conn->connect_errno){
             echo "Ha ocurrido un fallo al conectar a MySQL: (".$conn->connect_errno.")".$conn->connect_error;
         }
+
+        //Query a base de datos
+        $sql = "SELECT Id, Nombre, Apellido FROM Usuario"
   ?>
 
 <div class="jumbotron jumbotron-fluid">
@@ -55,6 +58,13 @@
         </div>
       </div>
 
+      <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-3"></div>
+
+        <div class="col-6">
         <div class="card">
           <div class="card-header"><h4>Alumnos Registrados</h4></div>
           <div class="card-body">
@@ -81,9 +91,11 @@
                     </tr>";
                   }
                 }
+                ?>
               </tbody>
             </table>
           </div>
+        </div>
         </div>
 
       <div class="col-3"></div>
