@@ -37,6 +37,7 @@
             <h4>Ingrese sus datos</h4>
           </div>
           <div class="card-body">
+
             <form name="alta-alumnos" action="alta.php" method="post">
               <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -46,8 +47,9 @@
                 <label for="apellido">Apellido Paterno:</label>
                 <input type="text" class="form-control" id="apellido" name="apellido"/>
               </div>
-              <input type="submit" class="btn btn-info" value="Agregar Alumno">
+              <input type="submit" class="btn btn-primary" value="Agregar Alumno">
             </form>
+            
           </div>
         </div>
       </div>
