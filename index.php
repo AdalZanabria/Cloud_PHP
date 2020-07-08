@@ -19,7 +19,9 @@
         }
 
         //Query a base de datos
-        $sql = "SELECT Id, Nombre, Apellido FROM Usuario"
+        $sql = "SELECT Id, Nombre, Apellido FROM Usuario";
+
+	$result = $conn -> query($sql);
   ?>
 
 <div class="jumbotron jumbotron-fluid">
@@ -65,7 +67,7 @@
       <div class="col-3"></div>
 
         <div class="col-6">
-        <div class="card">
+        <div class="card" style="margin:25px 0px 25px 0px">
           <div class="card-header"><h4>Alumnos Registrados</h4></div>
           <div class="card-body">
             <table class="table table-hover">
